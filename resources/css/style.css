@@ -4,7 +4,6 @@ html {
   font-size: 18px;
   color: white;
   font-family: Helvetica;
-  background-color: black;
 }
 
 /*Global Containers*/
@@ -12,6 +11,7 @@ html {
 .global-container {
   display: flex;
   justify-content: center;
+  background-color: transparent;
 }
 
 .site-container {
@@ -23,6 +23,7 @@ html {
 header {
   display: flex;
   align-items: center;
+  background-color: black;
 }
 
 header img {
@@ -38,6 +39,7 @@ header span {
 
 .main-banner-container {
   display: flex;
+  flex-direction: column;
   background-image: url("../images/moto.jpeg");
   height: 25rem;
   background-size: cover;
@@ -63,6 +65,7 @@ header span {
   font-weight: bold;
   margin-top: 0.25rem;
   margin-left: 3rem;
+  margin-bottom: 2rem;
 }
 
 /*Nav Bar*/
@@ -73,10 +76,13 @@ nav {
   background-color: firebrick;
 }
 
-nav span {
+nav a {
   display: flex;
   margin: 0.75rem 0 0.75rem 0;
   font-size: 0.75rem;
+  text-decoration: none;
+  color: white;
+
 }
 
 /*Items Block*/
@@ -117,7 +123,40 @@ nav span {
   margin: 4.5rem 0 4.5rem 0;
 }
 
+/*Supplementary Info*/
+
 .supp-info-container {
+  display: flex;
+  justify-content: space-between;
   margin: 3rem 0 4rem 0;
   background-color: white;
+}
+
+.supp-info-label {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  background-color: black;
+}
+
+.supp-info {
+  display: flex;
+}
+.supp-info span {
+  margin: 1rem 0 1rem 2rem;
+  color: white;
+}
+
+.supp-info-sub {
+  background-color: white;
+  color: black;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 5rem;
 }

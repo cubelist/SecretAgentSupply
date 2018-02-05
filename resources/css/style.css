@@ -8,21 +8,27 @@ html {
 
 /*Global Containers*/
 
-.global-container {
+/*.global-container {
   display: flex;
   justify-content: center;
   background-color: transparent;
-}
+}*/
 
-.site-container {
+.container {
   width: 960px;
+  margin: 0 auto;
 }
 
 /*Header & logo styling*/
 
-header {
+header .container {
   display: flex;
   align-items: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
   background-color: black;
 }
 
@@ -31,7 +37,7 @@ header img {
   margin: 0 1rem 0 0.5rem;
 }
 
-header span {
+#SASI {
   margin: 0.66rem 0 0.66rem 0;
 }
 
@@ -48,7 +54,7 @@ header span {
 .banner-strap-container {
   display: flex;
   flex-direction: column;
-  width: 20rem;
+  width: 25rem;
   margin-top: 9rem;
   background-color: black;
 }
@@ -70,6 +76,11 @@ header span {
 
 /*Nav Bar*/
 
+nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -77,13 +88,14 @@ nav {
 }
 
 nav a {
-  display: flex;
+  display: inline-flex;
   margin: 0.75rem 0 0.75rem 0;
   font-size: 0.75rem;
   text-decoration: none;
   color: white;
 
 }
+
 
 /*Items Block*/
 

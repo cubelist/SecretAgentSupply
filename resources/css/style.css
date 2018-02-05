@@ -167,7 +167,7 @@ footer {
   height: 5rem;
 }
 
-/*Media Queries*/
+/*1024px Screen Media Query*/
 
 @media only screen and (max-width: 1024px) {
 
@@ -203,18 +203,66 @@ nav  {
 }
 
 #newarrival {
-  /*font-weight: bold;*/
   font-size: 0.75rem;
-  /*margin-top: 2rem;
-  margin-left: 3rem;*/
 }
 
 #SBAM {
   font-size: 1.5rem;
-  /*font-weight: bold;
-  margin-top: 0.25rem;
-  margin-left: 3rem;
-  margin-bottom: 2rem;*/
 }
 
+}
+
+/*470px Screen Media Query*/
+
+@media only screen and (max-width: 470px) {
+
+#newarrival {
+  font-size: 0.77rem;
+  margin-top: 1rem;
+  margin-right: 2rem;
+}
+
+#SBAM {
+  font-size: 1rem;
+}
+
+.banner-strap-container {
+  width: 100%;
+  margin-top: 20rem;
+  height: 5rem;
+}
+
+.main-banner-container .container {
+  width: 100%
+}
+
+#watchcontainer {
+  display: none;
+}
+
+.item-container {
+  width: 90%;
+}
+
+.supp-info-container {
+  flex-direction: column;
+}
+
+.supp-info-label {
+  margin-bottom: 0.5rem;
+  width: 90%;
+}
+
+footer {
+  justify-content: flex-start;
+}
+
+.container {
+  width: auto;
+}
+
+.items-container,
+.supp-info-container {
+  align-items: center;
+  justify-content: center;
 }
